@@ -27,7 +27,6 @@ class BaseRobot:
 
 class FlyingRobot(BaseRobot):
     def __init__(self, name: str, weight: float, coords: list = None) -> None:
-        # Ініціалізація 3D координат для літаючого робота
         full_coords = coords if coords is not None else [0, 0, 0]
         super().__init__(name, weight, full_coords)
 
